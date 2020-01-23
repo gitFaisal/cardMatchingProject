@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Game</title>
+    <link rel='stylesheet' href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <h1>Card Matching Games!</h1>
+
+    <section class='memory-game'>
+        <div class='memory-card' data-framework='aurelia'>
+            <img class='front-face' src="{% static 'images/aurelia.svg' %}" alt='Aurelia'/>
+            <img class='back-face' src="{% static 'images/blueStar.png' %}" alt='JS Badge'/>
+        </div>
+        <div class='memory-card' data-framework='aurelia'>
+            <img class='front-face' src="{% static 'images/aurelia.svg' %}" alt='Aurelia'/>
+            <img class='back-face' src="{% static 'images/blueStar.png' %}" alt='JS Badge'/>
+        </div>
+        <div class='memory-card' data-framework='vue'>
+            <img class='front-face' src="{% static 'images/vue.svg' %}" alt='Vue'/>
+            <img class='back-face' src="{% static 'images/blueStar.png' %}" alt='JS Badge'/>
+        </div>
+        <div class='memory-card' data-framework='vue'>
+            <img class='front-face' src="{% static 'images/vue.svg' %}" alt='Vue'/>
+            <img class='back-face' src="{% static 'images/blueStar.png' %}" alt='JS Badge'/>
+        </div>
+        <div class='memory-card' data-framework='angular'>
+            <img class='front-face' src="{% static 'images/angular.svg' %}" alt='Angular'/>
+            <img class='back-face' src="{% static 'images/blueStar.png' %}" alt='JS Badge'/>
+        </div>
+        <div class='memory-card' data-framework='angular'>
+            <img class='front-face' src="{% static 'images/angular.svg' %}" alt='Angular'/>
+            <img class='back-face' src="{% static 'images/blueStar.png' %}" alt='JS Badge'/>
+        </div>
+        <div class='memory-card' data-framework='ember'>
+            <img class='front-face' src="{% static 'images/ember.svg' %}" alt='Ember'/>
+            <img class='back-face' src="{% static 'images/blueStar.png' %}" alt='JS Badge'/>
+        </div>
+        <div class='memory-card' data-framework='ember'>
+            <img class='front-face' src="{% static 'images/ember.svg' %}" alt='Ember'/>
+            <img class='back-face' src="{% static 'images/blueStar.png' %}" alt='JS Badge'/>
+        </div>
+        <div class='memory-card' data-framework='backbone'>
+            <img class='front-face' src="{% static 'images/backbone.svg' %}" alt='Backbone'/>
+            <img class='back-face' src="{% static 'images/blueStar.png' %}" alt='JS Badge'/>
+        </div>
+        <div class='memory-card' data-framework='backbone'>
+            <img class='front-face' src="{% static 'images/backbone.svg' %}" alt='Backbone'/>
+            <img class='back-face' src="{% static 'images/blueStar.png' %}" alt='JS Badge'/>
+        </div>
+        <div class='memory-card' data-framework='react'>
+            <img class='front-face' src="{% static 'images/react.svg' %}" alt='React'/>
+            <img class='back-face' src="{% static 'images/blueStar.png' %}" alt='JS Badge'/>
+        </div>
+        <div class='memory-card' data-framework='react'>
+            <img class='front-face' src="{% static 'images/react.svg' %}" alt='React'/>
+            <img class='back-face' src="{% static 'images/blueStar.png' %}" alt='JS Badge'/>
+        </div>
+        <script src="{% static 'js/scripts.js' %}"></script>
+    </section>
+</body>
+</html>
