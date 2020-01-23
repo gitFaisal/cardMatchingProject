@@ -8,8 +8,39 @@
     <link rel='stylesheet' href='styles.css'>
 </head>
 <body>
-    
+    <audio id='matchSound'>
+        <source src = 'sounds/match.mp3' type="audio/mpeg">
+    </audio>
+    <audio id='failSound'>
+        <source src = 'sounds/fail.mp3' type="audio/mpeg">
+    </audio>
+   
+    <section class = 'score-panel'>
+            <span class="moves">0</span> Move(s)
+            <button class ='restart' onclick=location.reload(true)>Restart</button>
+    </section>
+   
+
+    <!-- =====MODAL====== -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+         <div class="modal-content">
+              <span class="close">&times;</span>
+              <div id='result'>
+                  <p>Congratulation!!!</p>
+                  <p>You made <span id='finalMoves'></span>moves</p>
+              </div>
+         </div>
+        
+    </div>
+
+    <!-- =====MODAL====== -->   
+
+
+
     <section class='memory-game'>
+
         <div class='memory-card' data-framework='aurelia'>
             <img class='front-face' src='img/aurelia.svg' alt='Aurelia'/>
             <img class='back-face' src='img/js-badge.svg' alt='JS Badge'/>
