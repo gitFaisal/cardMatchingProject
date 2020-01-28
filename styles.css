@@ -84,6 +84,10 @@ body {
 }
 
 .front-face{
+    padding: 5px;
+}
+
+.front-face{
     transform: rotateY(180deg);
 }
 
