@@ -15,7 +15,8 @@ var failSound = document.getElementById("failSound")
 // =======MODAL======
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
-document.getElementById('finalMoves').innerHTML = moves;
+
+;
 // =======MODAL======
 
 
@@ -63,10 +64,24 @@ function playFail(){
 
 // ======MODAL=======
 function modalOpen() {
-    // alert('im working')
-    modal.style.display = "block";
+    if(moves <=10){
+        document.getElementById('numberOfMoves').innerHTML = moves;
+        document.getElementById('finalMoves').innerHTML = 'Cool!'
+        modal.style.display = "block";
+    }
+    else if(moves>10 && moves<15){
+        document.getElementById('numberOfMoves').innerHTML = moves;
+        document.getElementById('finalMoves').innerHTML = 'Not bad!'
+        modal.style.display = "block";
+    }
+    else{
+        document.getElementById('numberOfMoves').innerHTML = moves;
+        document.getElementById('finalMoves').innerHTML = 'You can do it better!'
+        modal.style.display = "block";
+    }
   }
 
+//  close button for modal 
   span.onclick = function() {
     modal.style.display = "none";
   }

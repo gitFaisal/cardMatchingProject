@@ -7,10 +7,11 @@
 body {
     height: 100vh;
     display:  flex;
-    background: #060AB2;
+    background: rgb(34, 100, 18);
 }
 
 .score-panel{
+    font-family: Bangers;
     font-size: 30px;
     color: white;
     text-align: center;
@@ -22,13 +23,13 @@ body {
 }
 
 .restart {
-	background-color:#0073ff;
+	background-color:#05491f;
 	border-radius:15px;
-	border:1px solid #03b5eb;
+	border:1px solid #054114;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family: Bangers;
 	font-size:23px;
 	padding:4px 31px;
 	text-decoration:none;
@@ -77,7 +78,7 @@ body {
     height: 100%;
     padding: 20px;
     border-radius: 5px;
-    background: #1c7ccc;
+    background: #014618;
     position: absolute;
     backface-visibility: hidden;
 }
@@ -95,7 +96,7 @@ body {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 100px; /*Location of the box*/
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -111,8 +112,9 @@ body {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
+    border-radius: 5px;
     width: 50%;
-    height: 50%;
+    height: 50%; 
   }
   
   /* The Close Button */
@@ -130,5 +132,12 @@ body {
     cursor: pointer;
   }
 
+
+#result{
+    font-size: 40px;
+    text-align: center;
+    font-family: Bangers;
+}
+  
 
 /* =======MODAL======= */
