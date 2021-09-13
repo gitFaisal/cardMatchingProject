@@ -11,15 +11,12 @@ var matches = [];
 var matchSound = document.getElementById("matchSound")
 var failSound = document.getElementById("failSound")
 
-
 // =======MODAL======
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 
 ;
 // =======MODAL======
-
-
 
 function moveCounter(){
     moves++;
